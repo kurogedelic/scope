@@ -1,1 +1,10 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>scope</title><link rel="stylesheet" href="style.css"></head><body><main><div id="stage"><canvas id="scope"></canvas><div id="text"></div></div><section id="controls"><button id="play">PLAY</button><select id="preset"><option>COMPOSITION</option><option>ROSETTE</option><option>KNOT</option><option>SPIRAL</option><option>BUTTERFLY</option><option>GEAR</option><option>ORBIT</option><option>WEAVE</option><option>CHAOS</option></select><label>RATE<input id="rate" type="range" min=".1" max="2" step=".01" value=".55"></label><label>DEPTH<input id="depth" type="range" min="0" max="1" step=".01" value=".65"></label><button id="seed">SEED</button></section></main><script src="app.js"></script></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>scope</title><link rel="stylesheet" href="style.css"></head><body><main><div id="stage"><canvas id="scope"></canvas></div><section id="bar"><button id="play">PLAY</button><button id="scoreBtn">SCORE</button><button id="random">MUTATE</button><span id="status">168 BPM</span></section><section id="scorePanel"><textarea id="score" spellcheck="false">@168
+grid 16
+[spike zap noise slope]*2
+"NOISE" zap spike zap
+[crack noise spike]*2 "ERROR"
+coil fold zap zap
+?70 [spike zap] ?30 [noise crack]
+"VOLTAGE" [zap spike slope]*2
+knot ring noise fold
+"END" spike spike zap crack</textarea><div id="hint">spike zap noise crack slope coil fold ring knot "TEXT" · [ ]*n · ?%</div></section></main><script src="app.js"></script></body></html>
