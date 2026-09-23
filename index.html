@@ -1,10 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>scope</title><link rel="stylesheet" href="style.css"></head><body><main><div id="stage"><canvas id="scope"></canvas></div><section id="bar"><button id="play">PLAY</button><button id="scoreBtn">SCORE</button><button id="random">MUTATE</button><span id="status">168 BPM</span></section><section id="scorePanel"><textarea id="score" spellcheck="false">@168
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>scope</title><link rel="stylesheet" href="style.css"></head><body><main><section id="editor"><textarea id="score" spellcheck="false">@176
 grid 16
-[spike zap noise slope]*2
-"NOISE" zap spike zap
-[crack noise spike]*2 "ERROR"
-coil fold zap zap
-?70 [spike zap] ?30 [noise crack]
-"VOLTAGE" [zap spike slope]*2
-knot ring noise fold
-"END" spike spike zap crack</textarea><div id="hint">spike zap noise crack slope coil fold ring knot "TEXT" · [ ]*n · ?%</div></section></main><script src="app.js"></script></body></html>
+[spike zap checker sine]*2
+sphere morph grid3d landscape
+"NOISE" zoomcircle crack random
+[wave tunnel lattice terrain]*2
+?70 knot ?30 swarm
+cube fold horizon rings
+"VOLTAGE" [zap spike pulse]*2</textarea><div id="hint">spike zap noise crack slope pulse sine wave random · coil ring rings knot fold morph · checker grid grid3d lattice cube sphere tunnel landscape terrain horizon swarm zoomcircle · "TEXT" · [ ]*n · ?%</div></section><aside><div id="stage"><canvas id="scope"></canvas></div><div id="bar"><button id="play">PLAY</button><button id="random">MUTATE</button><span id="status">176 BPM</span></div></aside></main><script src="app.js"></script></body></html>
